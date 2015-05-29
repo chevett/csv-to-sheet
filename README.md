@@ -3,13 +3,12 @@ csv-to-sheet
 
 Got a google service account and a csv?  Then upload it.
 
-Install
--------
+##Install
 ```bash
 sudo npm install -g csv-to-sheet
 ```
 
-Command-line usage
+##Command-line usage
 ```bash
 Usage: csv-to-sheet  -a xxx@developer.gserviceaccount.com -p file.pem file.csv
 
@@ -20,14 +19,14 @@ Options:
   -u, --user     The email address to impersonate  [required]
 ```
 
-Node usage
+##Node usage
 ```js
 var csvToSheet = require('csv-to-sheet');
 csvToSheet({
-	clientEmail: argv.a,
-	userEmail: argv.u,
-	file: argv._[0],
-	pem: argv.p,
+	clientEmail: 'xxx@developer.gserviceaccount.com',
+	userEmail: 'myaccount@mydomain.com',
+	file: 'path/to/file.csv',
+	pem: 'path/to/file.pem',
 }, function(err, res){
 
 

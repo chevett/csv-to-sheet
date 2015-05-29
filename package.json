@@ -1,7 +1,7 @@
 {
   "name": "csv-to-sheet",
   "version": "1.0.0",
-  "description": "csv-to-sheet ============",
+  "description": "csv-to-sheet",
   "main": "./lib.js",
   "scripts": {
     "test": "echo \"Error: no test specified, but you look great.\" && exit 0"
