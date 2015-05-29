@@ -1,0 +1,33 @@
+{
+  "name": "csv-to-sheet",
+  "version": "1.0.0",
+  "description": "csv-to-sheet ============",
+  "main": "./lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified, but you look great.\" && exit 0"
+  },
+  "author": "mike chevett",
+  "license": "ISC",
+  "bin": {
+    "csv-to-sheet": "./cli.js"
+  },
+  "dependencies": {
+    "googleapis": "^2.0.4",
+    "yargs": "^3.9.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chevett/csv-to-sheet.git"
+  },
+  "keywords": [
+    "google",
+    "sheets",
+    "spreadsheet",
+    "csv"
+  ],
+  "bugs": {
+    "url": "https://github.com/chevett/csv-to-sheet/issues"
+  },
+  "homepage": "https://github.com/chevett/csv-to-sheet"
+}
