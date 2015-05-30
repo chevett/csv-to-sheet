@@ -11,6 +11,9 @@ var argv = require('yargs')
 	.describe('p', 'Path to the pem file') 
 	.alias('u', 'user')
 	.describe('u', 'The email address to impersonate')
+	.alias('f', 'folderid')
+	.nargs('f', 1)
+	.describe('f', 'Drive folder id')
 	.alias('h', 'help')
 	.demand(1)
 	.argv;
@@ -21,6 +24,7 @@ lib({
 	clientEmail: argv.a,
 	userEmail: argv.u,
 	file: argv._[0],
+	folderId: argv.f,
 	pem: argv.p,
 }, function(err, res){
 	if (err) {
